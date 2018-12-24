@@ -2,7 +2,7 @@
     <div>
       <nav-header></nav-header>
       <nav-bread>
-        <span slot="test">Address</span>
+        <span slot="test">地址</span>
       </nav-bread>
       <div class="checkout-page">
         <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
