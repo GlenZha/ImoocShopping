@@ -46,16 +46,16 @@
             <!-- process step -->
             <div class="check-step">
               <ul>
-                <li class="cur"><span>Confirm</span> address</li>
-                <li><span>View your</span> order</li>
-                <li><span>Make</span> payment</li>
-                <li><span>Order</span> confirmation</li>
+                <li class="cur"><span>确认地址</span></li>
+                <li><span>查看订单</span></li>
+                <li><span>付款</span></li>
+                <li><span>订单确认</span></li>
               </ul>
             </div>
 
             <!-- address list -->
             <div class="page-title-normal checkout-title">
-              <h2><span>Shipping address</span></h2>
+              <h2><span>发货地址</span></h2>
             </div>
             <div class="addr-list-wrap">
               <div class="addr-list">
@@ -72,9 +72,9 @@
                       </a>
                     </div>
                     <div class="addr-opration addr-set-default">
-                      <a href="javascript:;" class="addr-set-default-btn" v-if="!item.isDefault" @click="setDefault(item.addressId)"><i>Set default</i></a>
+                      <a href="javascript:;" class="addr-set-default-btn" v-if="!item.isDefault" @click="setDefault(item.addressId)"><i>设置默认</i></a>
                     </div>
-                    <div class="addr-opration addr-default" v-if="item.isDefault">Default address</div>
+                    <div class="addr-opration addr-default" v-if="item.isDefault">默认地址</div>
                   </li>
 
                   <li class="addr-new">
@@ -82,7 +82,7 @@
                       <i class="icon-add">
                         <svg class="icon icon-add"><use xlink:href="#icon-add"></use></svg>
                       </i>
-                      <p>Add new address</p>
+                      <p>添加新地址</p>
                     </div>
                   </li>
                 </ul>
@@ -90,7 +90,7 @@
 
               <div class="shipping-addr-more">
                 <a class="addr-more-btn up-down-btn" href="javascript:;" @click="expand" v-bind:class="{'open':limit>3}">
-                  more
+                  更多
                   <i class="i-up-down">
                     <i class="i-up-down-l"></i>
                     <i class="i-up-down-r"></i>
@@ -101,7 +101,7 @@
 
             <!-- shipping method-->
             <div class="page-title-normal checkout-title">
-              <h2><span>Shipping method</span></h2>
+              <h2><span>送货方式</span></h2>
             </div>
             <div class="shipping-method-wrap">
               <div class="shipping-method">
@@ -118,7 +118,7 @@
             </div>
             <div class="next-btn-wrap">
              <!-- 跳转到订单确认页面-->
-              <router-link class="btn btn--m btn--red" v-bind:to="{path:'orderConfirm',query:{'addressId':selectedAddrId}}">Next</router-link>
+              <router-link class="btn btn--m btn--red" v-bind:to="{path:'orderConfirm',query:{'addressId':selectedAddrId}}">确定</router-link>
             </div>
           </div>
         </div>
